@@ -1,0 +1,68 @@
+{
+    "total_revenue": 97358.3,
+    "total_orders": 175,
+    "overall_return_rate_pct": 25.14,
+    "category_analysis": [
+        {
+            "category": "Babycare",
+            "total_revenue": 16535.9,
+            "total_orders": 29,
+            "returned_orders": 7,
+            "average_rating": 2.6551724137931036,
+            "return_rate_pct": 24.137931034482758
+        },
+        {
+            "category": "Haircare",
+            "total_revenue": 43698.2,
+            "total_orders": 53,
+            "returned_orders": 14,
+            "average_rating": 3.0377358490566038,
+            "return_rate_pct": 26.41509433962264
+        },
+        {
+            "category": "PersonalCare",
+            "total_revenue": 10190.4,
+            "total_orders": 34,
+            "returned_orders": 5,
+            "average_rating": 3.1470588235294117,
+            "return_rate_pct": 14.705882352941178
+        },
+        {
+            "category": "Skincare",
+            "total_revenue": 26933.8,
+            "total_orders": 59,
+            "returned_orders": 18,
+            "average_rating": 3.1016949152542375,
+            "return_rate_pct": 30.508474576271187
+        }
+    ],
+    "monthly_revenue": [
+        {
+            "month": "2026-01",
+            "revenue": 29582.1
+        },
+        {
+            "month": "2026-02",
+            "revenue": 13195.5
+        },
+        {
+            "month": "2026-03",
+            "revenue": 20318.9
+        },
+        {
+            "month": "2026-04",
+            "revenue": 9495.3
+        },
+        {
+            "month": "2026-05",
+            "revenue": 13151.1
+        },
+        {
+            "month": "2026-06",
+            "revenue": 11615.4
+        }
+    ],
+    "highest_revenue_month": "2026-01",
+    "highest_revenue_category": "Haircare",
+    "highest_return_rate_category": "Skincare"
+}

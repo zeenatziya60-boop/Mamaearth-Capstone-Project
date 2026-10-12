@@ -1,0 +1,35 @@
+### Business Analysis Report: Mamaearth E-commerce (January – June 2026)
+
+This report provides a data-driven overview of Mamaearth’s business performance for the first half of 2026.
+
+#### 1. Overall Performance
+Between January and June 2026, the platform generated a **total revenue of 97,358.3** across **175 total orders**. The business recorded an **overall return rate of 25.14%** for this period.
+
+#### 2. Category-wise Revenue and Return Analysis
+The following table summarizes the performance metrics by product category:
+
+| Category | Revenue | Orders | Return Rate | Avg. Rating |
+| :--- | :--- | :--- | :--- | :--- |
+| **Haircare** | 43,698.2 | 53 | 26.41% | 3.04 |
+| **Skincare** | 26,933.8 | 59 | 30.51% | 3.10 |
+| **Babycare** | 16,535.9 | 29 | 24.14% | 2.66 |
+| **PersonalCare** | 10,190.4 | 34 | 14.71% | 3.15 |
+
+*   **Key Observations:**
+    *   **Haircare** is the highest revenue-generating category.
+    *   **Skincare** accounts for the highest volume of orders (59) but also suffers from the highest return rate at 30.51%.
+    *   **PersonalCare** maintains the lowest return rate (14.71%) and the highest average customer rating (3.15).
+    *   **Babycare** holds the lowest average rating at 2.66.
+
+#### 3. Monthly Revenue Trends
+The revenue fluctuated significantly throughout the six-month period:
+*   **Peak Performance:** January 2026 saw the highest revenue at 29,582.1.
+*   **Low Point:** April 2026 recorded the lowest revenue at 9,495.3.
+*   **Trend:** Following the peak in January, revenue dropped in February, saw a recovery in March, and remained relatively suppressed through the second quarter (April–June).
+
+#### 4. Business Recommendations
+Based on the verified data, the following steps are recommended:
+
+1.  **Investigate Skincare Returns:** Given that Skincare has the highest return rate (30.51%), it is recommended to analyze the specific reasons for these returns to mitigate revenue loss. 
+2.  **Focus on Babycare Quality:** With Babycare exhibiting the lowest average rating (2.66), a review of product quality or customer feedback in this segment is suggested to improve brand perception and potentially increase future sales volume.
+3.  **Capitalize on PersonalCare Success:** PersonalCare currently demonstrates the most stable performance with the lowest return rate. The company should consider strategies to increase the visibility or inventory focus of this category to drive more consistent revenue.

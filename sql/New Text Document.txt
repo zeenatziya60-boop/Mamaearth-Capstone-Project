@@ -1,0 +1,41 @@
+-- Mamaearth Capstone: Business Analysis Reports
+
+USE mamaearth_db;
+
+-- 1. Total number of orders
+SELECT COUNT(*) AS total_orders
+FROM orders;
+
+-- 2. Total revenue by product category
+SELECT p.category,
+       ROUND(SUM(o.quantity * p.price * (1 - o.discount_pct / 100)), 2) AS total_revenue
+FROM orders o
+JOIN products p ON o.product_id = p.product_id
+GROUP BY p.category
+ORDER BY total_revenue DESC;
+
+-- 3. Category-wise return rate
+SELECT p.category,
+       COUNT(*) AS total_orders,
+       SUM(CASE WHEN o.returned = 1 THEN 1 ELSE 0 END) AS returned_orders,
+       ROUND(100.0 * SUM(CASE WHEN o.returned = 1 THEN 1 ELSE 0 END) / COUNT(*), 2) AS return_rate_pct
+FROM orders o
+JOIN products p ON o.product_id = p.product_id
+GROUP BY p.category
+ORDER BY return_rate_pct DESC;
+
+-- 4. Monthly revenue
+SELECT DATE_FORMAT(o.order_date, '%Y-%m') AS month,
+       ROUND(SUM(o.quantity * p.price * (1 - o.discount_pct / 100)), 2) AS monthly_revenue
+FROM orders o
+JOIN products p ON o.product_id = p.product_id
+GROUP BY DATE_FORMAT(o.order_date, '%Y-%m')
+ORDER BY month;
+
+-- 5. Average customer rating by category
+SELECT p.category,
+       ROUND(AVG(o.rating), 2) AS average_rating
+FROM orders o
+JOIN products p ON o.product_id = p.product_id
+GROUP BY p.category
+ORDER BY average_rating DESC;
