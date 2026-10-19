@@ -43,3 +43,39 @@ Google Gemini was used to generate a business analysis narrative based on struct
 
 ## Note
 The findings and recommendations describe observed patterns in the available dataset and do not establish proven causes.
+## How to Run the Project
+
+### 1. SQL Reports
+
+Run `sql/schema.sql` to create the tables, load the source CSV files using `sql/seed_data.sql`, and execute `sql/reports.sql` to generate the business reports. The SQL reports use all 180 raw orders.
+
+### 2. Python Data Analysis
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the analysis and visualization scripts from the project root:
+
+```bash
+python analysis/clean_and_eda.py
+python analysis/visualize.py
+```
+
+The analysis script loads the raw customer, product, and order CSV files, performs data cleaning, detects duplicate orders, analyzes returns and revenue, and generates `narrator/findings.json`. The visualization script generates the return-rate and outlier-corrected monthly revenue charts.
+
+### 3. GenAI Narrative
+
+To use Google Gemini, set your free-tier API key as the `GEMINI_API_KEY` environment variable, then run:
+
+```bash
+python narrator/generate_narrative.py
+```
+
+If no API key is configured, the script should use its offline fallback. The generated narrative and numeric accuracy check are saved in the `narrator/` folder.
+
+### Reproducibility
+
+Run the scripts in the order described above. The SQL analysis uses the raw dataset, while the Python analysis independently cleans the CSV files. The findings and narrative should be regenerated from the latest analysis outputs.
