@@ -16,12 +16,14 @@ The project uses order, customer, and product datasets covering January to June 
 
 ## Key Findings
 - Total orders analysed: 180
-- Known revenue: 91,262.20 (12 orders have missing discount information, so their revenue could not be calculated).
+- Total revenue: 99,860.20 (12 orders had missing discount information; these discounts were treated as 0% for revenue calculation).
 - Overall return rate: 25.00%.
-- Haircare generated the highest known revenue: 39,069.10.
+- Haircare generated the highest revenue: 39,069.10.
 - Skincare had the highest return rate: 31.67%.
-- January 2026 had the highest monthly revenue: 28,635.10.
-- April 2026 had the lowest monthly revenue: 9,046.30.
+- January 2026 had the highest monthly revenue before excluding quantity outliers: 29,582.10.
+- April 2026 had the lowest monthly revenue: 9,495.30.
+- Two quantity outliers were identified and flagged, not removed.
+- COD orders had a 43.64% return rate, compared with 16.80% for non-COD orders.
 ## Project Structure
 - `sql/` — Database schema, seed data, and business analysis queries
 - `data/` — Source CSV files and cleaned order data
